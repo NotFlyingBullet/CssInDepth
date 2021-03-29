@@ -1,0 +1,12 @@
+﻿h1{
+	/*С засечками*/
+	font-family: serif;
+}
+#page-title{
+	/*Рубленый*/
+	font-family: sans-serif;
+}
+.title{
+	/*Моноширный*/
+	font-family: monospace;
+}
