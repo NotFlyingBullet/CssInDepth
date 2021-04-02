@@ -1,0 +1,54 @@
+﻿body{
+	font-size: 16px;
+	margin: 1.5em;
+}
+.padded{
+	font-size: 16px;
+	padding: 2em;
+}
+.big-small{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.box{
+	padding: 1em;
+	border-radius: 1em;
+	background-color: lightgray;
+}
+.box-small{
+	font-size: 12px;
+}
+.box-large{
+	font-size: 18px;
+}
+/*хотя размер шрифта и отступ имеют одинаковое значение их вычесленные значения различны*/
+.slogan{
+	font-size: 1.2em;
+	padding: 1.2em;
+	background-color: #ccc;
+}
+/*Проблема сжатия шрифтов*/
+ul{
+	font-size: 1.5em;
+}
+/*Решение проблемы*/
+/*ul ul{
+	font-size: 1em;
+}*/
+
+/*Установка размера шрифта по умолчанию*/
+:root{
+	font-size: 0.875em;
+}
+.panel{
+	padding: 1em;
+	border-radius: 0.5em;
+	border: 1px solid #999;
+}
+.panel>h2{
+	margin-top: 0;
+	font-size: 0.8rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}

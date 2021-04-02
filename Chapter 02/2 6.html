@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/2 6.css" type="text/css">
+	<title>Глава 2 (2.6)</title>
+</head>
+<body>
+	<div class="panel">
+		<h2>Моносорта</h2>
+		<div class="body">
+			Мы сотрудничаем с небольшими плантациями по всему миру, чтобы собирать зерна в пик сезона. Затем мы тщательно поджариваем зернам небольшими партиями, чтобы максимально раскрыть их потенциал.
+		</div>
+	</div>
+	<aside class="dark">
+		<div class="panel">
+			<h2>Моносорта</h2>
+			<div class="body">
+				Мы сотрудничаем с небольшими плантациями по всему миру, чтобы собирать зерна в пик сезона. Затем мы тщательно поджариваем зернам небольшими партиями, чтобы максимально раскрыть их потенциал.
+			</div>
+		</div>
+	</aside>
+	<script type="text/javascript">
+		let rootElement = document.documentElement;
+		let styles = getComputedStyle(rootElement);
+		let mainColor = styles.getPropertyValue('--main-bg');
+		console.log(String(mainColor).trim());
+		rootElement = document.documentElement;
+		rootElement.style.setProperty('--main-bg', '#cdf');
+	</script>
+</body>
+</html>

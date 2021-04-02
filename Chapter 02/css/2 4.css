@@ -1,0 +1,16 @@
+:root{
+	/*font-size: 1.5vw;*/
+	font-size: calc(0.5em + 1vw);
+}
+.panel{
+	font-size: 1rem;
+	padding: 1em;
+	border-radius: 0.5em;
+	border: 1px solid #999;
+}
+.panel>h2{
+	margin-top: 0;
+	font-size: 0.8em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
