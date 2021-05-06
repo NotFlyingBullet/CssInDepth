@@ -1,0 +1,149 @@
+.decor{
+	margin: 2em auto;
+	text-align: center;
+}
+p{
+	text-align: center;
+	font-weight: bold;
+}
+.link-title{
+	margin: 1em 0;
+	text-align: center;
+	font-size: 2em;
+}
+/*Градиенты*/
+	.fade{
+		height: 200px;
+		width: 400px;
+		background-image: linear-gradient(to right, white, blue);
+	}
+	.fade2{
+		background-image: linear-gradient(180deg, white 0%, blue 40%, red 100%);
+	}
+	.fade3{
+		border: 1px solid lightgrey;
+		background-image: linear-gradient(180deg,
+			white 30%, blue 35%,
+			blue 65%, red 70%);
+	}
+	.fade4{
+		height: 1em;
+		width: 400px;
+		background-image: repeating-linear-gradient(-45deg, #57b, #57b 10px, #148 10px, #148 20px);
+		border-radius: 0.3em;
+	}
+	.fade5{
+		height: 200px;
+		width: 400px;
+		background-image: radial-gradient(circle,	 white, blue);
+	}
+	.fade6{
+		height: 200px;
+		width: 400px;
+		background-image: radial-gradient(3em at 25% 25%, white, midnightblue);
+	}
+	.fade8{
+		height: 200px;
+		width: 400px;
+		background-image: radial-gradient(circle, midnightblue 0%, white 75%, lightgrey 100%);
+	}
+	.fade9{
+		height: 200px;
+		width: 400px;
+		background-image: repeating-radial-gradient(circle, midnightblue 0%, midnightblue 1em, white 1em, white 2em);
+	}
+
+/*Тени*/
+	.button{
+		padding: 1em;
+		border: 0;
+		font-size: 0.8em;
+		color: white;
+		border-radius: 0.5em;
+		background-image: linear-gradient(to bottom, #57b, #148);
+		box-shadow: 0.1em 0.1em 0.5em #124;
+	}
+	.button:active{
+		box-shadow: inset 0 0 0.5em #124,
+								inset 0 0.5em 1em rgba(0,0,0,0.4);
+	}
+
+	.button-2{
+		border: 0;
+		color: white;
+		background-color: #57b;
+		font-size: 1rem;
+		padding: 0.8em;
+		box-shadow: 0em 0.2em 0.2em rgba(0, 0, 0, 0.15);
+	}
+	.button-2:hover{
+		background-color: #456ab6;
+	}
+	.button-2:active{
+		background-color: #148;
+	}
+
+	.button-3{
+		padding: 0.8em;
+		border: 0;
+		font-size: 1rem;
+		color: white;
+		border-radius: 0.5em;
+		background-color: #57b;
+		box-shadow: 0em 0.4em #148;
+		text-shadow: 1px 1px #148;
+	}
+	.button-3:active{
+		background-color: #456ab5;
+		transform: translateY(0.1em);
+		box-shadow: 0 0.3em #148;
+	}
+
+/*Режимы смешивания*/
+	.blend{
+		min-height: 400px;
+		background-image: url(../img/bear.jpg), url(../img/bear.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: -30vw, 30vw;
+		background-blend-mode: multiply;
+	}
+	.blend-2{
+		min-height: 400px;
+		background-image: url(../img/bear.jpg);
+		background-color: #148;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-blend-mode: luminosity;
+	}
+
+/*Добавление текстуры*/
+	.blend-3{
+		min-height: 400px;
+		background-image: url(../img/scratches.png), url(../img/bear.jpg);
+		background-size: 200px, cover;
+		background-repeat: repeat, no-repeat;
+		background-position: center center;
+		background-blend-mode: soft-light;
+	}
+
+/*Микширование режимов смешивания*/
+	.blend-4{
+		background-image: url(../img/bear.jpg);
+		background-size: cover;
+		background-position: center;
+		padding: 50em 0 1em;
+	}
+	.blend-4>h1{
+		margin: 0;
+		padding: 0.3em;
+		font-family: Helvetica, arial, sans-serif;
+		font-size: 8rem;
+		text-align: center;
+		mix-blend-mode: hard-light;
+		background-color: #c33;
+		color: #808080;
+		border: 0.1em solid #ccc;
+		border-width: 0.1em 0;
+	}
