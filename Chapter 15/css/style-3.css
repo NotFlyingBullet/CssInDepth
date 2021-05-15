@@ -1,0 +1,46 @@
+:root{
+	box-sizing: border-box;
+}
+*,
+::before,
+::after{
+	box-sizing: inherit;
+}
+.container{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+body{
+	background-color: hsl(200, 80%, 30%);
+	background-image: radial-gradient(hsl(200, 80%, 30%),
+																		hsl(210, 80%, 20%));
+	color: white;
+	line-height: 1.4;
+	margin: 0;
+	min-height: 100vh;	
+}
+body>p{
+	text-align: center;
+}
+.row{
+	display: flex;
+	justify-content: center;
+}
+.box{
+	width: 150px;
+	margin: 0 2em;
+	padding: 60px 0;
+	text-align: center;
+	background-color: hsl(150, 50%, 40%);
+	transform: perspective(200px) rotateX(30deg);
+}
+.row2{
+	perspective: 200px;
+}
+.box2{
+	backface-visibility: hidden;
+	transform: rotateX(30deg);
+}
+.row3{
+	perspective-origin: left bottom;
+}

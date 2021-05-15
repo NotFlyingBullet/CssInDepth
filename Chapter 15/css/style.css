@@ -1,0 +1,30 @@
+:root{
+	box-sizing: border-box;
+}
+*,
+::before,
+::after{
+	box-sizing: inherit;
+}
+body{
+	background-color: hsl(210, 80%, 20%);
+	font-family: Helvetica, Arial, sans-serif;
+}
+.container{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+img{
+	max-width: 100%;
+}
+.card{
+	padding: 0.5em;
+	margin: 0 auto;
+	background-color: white;
+	max-width: 300px;
+	transform-origin: left top;
+	transform: rotate(20deg);
+	/*transform: skew(20deg);*/
+	/*transform: scale(0.5);*/
+	/*transform: translate(100px, 40px) rotate(-4deg) skew(20deg) scale(0.5);*/
+}
