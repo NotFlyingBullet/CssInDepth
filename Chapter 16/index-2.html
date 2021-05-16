@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Глава 16</title>
+	<link rel="stylesheet" href="css/style-2.css">
+</head>
+<body>
+		<form action="#">
+			<label for="trip">Расскажите нам о впечатлениях от посещения зоопарка:</label>
+			<textarea name="about-my-trip" id="trip" cols="30" rows="5"></textarea>
+			<button type="submit" id="submit-button">Сохранить</button>
+		</form>
+
+<script>
+	var input = document.getElementById('trip');
+	var button = document.getElementById('submit-button');
+
+	var timeout = null;
+
+	button.addEventListener('click', function(event){
+		event.preventDefault();
+		clearTimeout('timeout');
+		button.classList.add('is-loading');
+		button.disabled = true;
+		input.disabled = true;
+	});
+
+	input.addEventListener('keyup', function(){
+		clearTimeout(timeout);
+		timeout = setTimeout(function(){
+			button.classList.add('shake');
+		}, 1000);
+	});
+	button.addEventListener('animationend', function(){
+		button.classList.remove('shake');
+	});
+
+</script>
+
+</body>
+</html>	

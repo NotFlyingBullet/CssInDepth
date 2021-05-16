@@ -1,0 +1,21 @@
+@keyframes over-and-back{
+	0%{
+		background-color: hsl(150, 50%, 50%);
+		transform: translate(0);
+	}
+	50%{
+		transform: translate(150px);
+		background-color: hsl(300, 50%, 60%)
+	}
+	100%{
+		background-color: hsl(150, 50%, 50%);
+		transform: translate(0);
+	}
+}
+
+.box{
+		width: 100px;
+		height: 100px;
+		background-color: green;
+		animation: over-and-back 3s linear infinite;
+	}
